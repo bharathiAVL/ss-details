@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Users</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>All Users</h1>
+  <input type="text" id="searchBox" placeholder="Search..." onkeyup="filterTable()">
+  <div class="table-wrapper">
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Username</th>
+          <th onclick="sortTable(2)">Password</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <br><a href="index.html">🏠 Back to Home</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
